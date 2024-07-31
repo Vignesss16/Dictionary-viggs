@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <corners android:radius="16dp"/> <!-- Changed radius from 24dp to 16dp -->
+    <stroke android:width="2dip" android:color="#B0B0B0"/> <!-- Changed stroke width to 2dip and color to a different grey -->
+
+    <!-- Optionally add a fill color for more customization -->
+    <solid android:color="#F0F0F0"/> <!-- Light grey fill color -->
+</shape>

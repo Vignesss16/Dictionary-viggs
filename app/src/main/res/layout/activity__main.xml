@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/input_field"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:layout_toLeftOf="@id/action_btn"
+            android:background="@drawable/corner_design"
+            android:hint="Type your query"
+            android:padding="12dp"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/action_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="5dp"
+            android:background="#E91E63"
+            android:padding="12dp"
+            android:text="Search"
+            android:textColor="#040302"
+            android:textSize="18sp" />
+
+        <ProgressBar
+            android:id="@+id/loading_spinner"
+            android:layout_width="80dp"
+            android:layout_height="24dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:indeterminateTint="@color/primarymy"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/word_display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="#1E88E5"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        tools:text="Example Word" />
+
+    <TextView
+        android:id="@+id/phonetic_display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#9E9E9E"
+        tools:text="/e x a m p l e/" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/definition_recycler_view"/>
+
+</LinearLayout>
